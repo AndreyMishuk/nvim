@@ -11,9 +11,11 @@ Plug 'w0rp/ale'
 "collorschemes
 Plug 'morhetz/gruvbox'
 
-"git"
+"git
 Plug 'airblade/vim-gitgutter'
 
+"Insert or delete brackets, parens, quotes in pair
+Plug 'jiangmiao/auto-pairs'
 
 call plug#end()
 
