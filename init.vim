@@ -2,6 +2,9 @@ call plug#begin('~/.config/nvim/plugged')
 
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 
+"Python mode
+Plug 'python-mode/python-mode', { 'for': 'python', 'branch': 'develop' }
+
 "Better Visual Guide
 Plug 'Yggdroot/indentLine'
 
@@ -41,9 +44,14 @@ set noshowmode
 set noshowmatch
 set nolazyredraw
 
+"Configuration for python mode
+let g:pymode_lint = 1
+let g:pymode_lint_checker = "pyflakes,pep8"
+
 " Search configuration
 set ignorecase                    " ignore case when searching
 set smartcase                     " turn on smartcase
+:nnoremap <esc> :noh<return><esc>
 
 set incsearch
 set hlsearch
