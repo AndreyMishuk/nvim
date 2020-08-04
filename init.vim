@@ -59,5 +59,8 @@ set expandtab
 set tabstop=2
 
 "mappings
-
 map <C-n> :NERDTreeToggle<CR>
+
+"block commenting
+vmap cc :norm i#<CR>
+vmap uc :norm ^x#<CR>
