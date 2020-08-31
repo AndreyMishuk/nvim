@@ -61,6 +61,11 @@ set tabstop=2
 "mappings
 map <C-n> :NERDTreeToggle<CR>
 
+"copy to system buffer Ctrl+c, poste Ctrl+v
+inoremap <C-v> <Esc>"+pa
+vnoremap <C-c> "+y
+vnoremap <C-d> "+d
+
 "block commenting
 vmap cc :norm i#<CR>
 vmap uc :norm ^x#<CR>
